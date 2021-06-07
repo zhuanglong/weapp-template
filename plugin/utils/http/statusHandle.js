@@ -1,14 +1,12 @@
 export function showLoading(config = {}) {
   // 不传递默认开启 loading
   if (!config.noLoading) {
-    console.log('show loading');
     wx.showLoading();
   }
 }
 
 export function hideLoading(config = {}) {
   if (!config.noLoading) {
-    console.log('hide loading');
     wx.hideLoading();
   }
 }
