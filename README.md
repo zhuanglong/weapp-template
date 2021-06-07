@@ -1,1 +1,1 @@
-# weapp_template
+# weapp-template
