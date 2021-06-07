@@ -11,5 +11,8 @@
     "url": "git+https://github.com/zhuanglong/weapp-template/tree/weapp-plugin"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "js-base64": "^3.6.1"
+  }
 }

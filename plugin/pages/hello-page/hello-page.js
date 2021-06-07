@@ -1,3 +1,5 @@
+import { toBase64, fromBase64 } from 'js-base64';
+
 import * as services from '/services/index';
 
 Page({
@@ -6,7 +8,10 @@ Page({
   },
 
   onLoad() {
-    console.log('This is a plugin page!');
+    const encoded = toBase64('This is a plugin page!');
+    console.log(encoded);
+    console.log(fromBase64(encoded));
+
     services.login({
       username: '123',
       password: 'xxx'

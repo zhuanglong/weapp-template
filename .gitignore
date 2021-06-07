@@ -1,6 +1,6 @@
 # dependencies
 **/node_modules
-plugin/miniprogram_npm
+**/miniprogram_npm
 
 # misc
 .DS_Store
