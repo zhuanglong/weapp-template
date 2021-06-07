@@ -1,4 +1,4 @@
-const plugin = requirePlugin('hello-plugin')
+const plugin = requirePlugin('myPlugin')
 Page({
   data: {
     items: [],

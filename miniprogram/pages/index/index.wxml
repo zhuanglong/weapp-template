@@ -1,4 +1,4 @@
-<navigator id="nav" url="plugin://hello-plugin/hello-page">
+<navigator id="nav" url="plugin://myPlugin/hello-page">
   Go to Plugin page
 </navigator>
 

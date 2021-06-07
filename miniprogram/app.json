@@ -3,7 +3,7 @@
     "pages/index/index"
   ],
   "plugins": {
-    "hello-plugin": {
+    "myPlugin": {
       "version": "dev",
       "provider": "wxc63208fc8b754ae1"
     }

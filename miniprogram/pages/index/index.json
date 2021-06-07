@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "hello-list": "plugin://hello-plugin/hello-component"
+    "hello-list": "plugin://myPlugin/hello-component"
   }
 }
