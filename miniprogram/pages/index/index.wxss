@@ -1,4 +1,3 @@
-/* pages/index/index.wxss */
 #nav {
   text-align: center;
   background: #eeeeee;
