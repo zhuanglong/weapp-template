@@ -38,6 +38,6 @@
     "minifyWXSS": true
   },
   "appid": "wxc63208fc8b754ae1",
-  "projectname": "weapp_plugin",
+  "projectname": "weapp-plugin",
   "condition": {}
 }

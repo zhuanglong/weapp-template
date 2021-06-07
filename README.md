@@ -1,4 +1,4 @@
-# weapp_plugin
+# weapp-plugin
 
 ### 关闭提示 sitemap 提示
 
