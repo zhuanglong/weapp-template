@@ -1,15 +1,51 @@
-# 插件文档标题
+# 插件式接入
 
-## 二级标题
+## 添加插件
 
-### 三级标题
+用管理员身份登录微信公众平台，请使用需要接入小程序的相关账号，依次点击：设置-第三方设置-添加插件。
 
-这个文件用于书写插件文档，引用图片时必须以**相对路径**引用 ***doc*** 目录下的本地图片，不能使用网络图片或非 ***doc*** 目录下的图片。以下是相对路径的引用示例：
+输入关键字“xxx”并搜索，点击添加，如下图：
 
-![链接](./example.jpeg)
+![](0.png)
 
-使用编辑器下方的上传按钮可以上传插件文档，上传的内容包括 doc 目录下的 README.md 和图片。
+## 集成插件
 
+声明插件：在 app.json 中声明插件
 
+```json
+{
+  "plugins": {
+    "myPlugin": {
+      "version": "1.0.0",
+      "provider": "wxc63208fc8b754ae1"
+    }
+  },
+  "functionalPages": {
+    "independent": true
+  },
+}
+```
 
+## 使用插件
 
+### 跳转到插件页面
+
+```js
+wx.navigateTo({
+  url: 'plugin://myPlugin/hello-page'
+});
+```
+
+### 引入插件的提供的组件
+
+```json
+{
+  "usingComponents": {
+    "hello-list": "plugin://myPlugin/hello-component"
+  }
+}
+```
+
+```html
+<hello-list items="{{ items }}" />
+```
