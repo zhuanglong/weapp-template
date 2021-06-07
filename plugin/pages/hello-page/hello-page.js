@@ -1,17 +1,22 @@
 import { toBase64, fromBase64 } from 'js-base64';
+import Notify from '@vant/weapp/notify/notify';
 
 import * as services from '/services/index';
 
 Page({
   data: {
+    message: 'This is a plugin page!',
     cityInfo: ''
   },
 
   onLoad() {
-    const encoded = toBase64('This is a plugin page!');
+    Notify({ type: 'success', message: this.data.message });
+    const encoded = toBase64(this.data.message);
     console.log(encoded);
     console.log(fromBase64(encoded));
+  },
 
+  onLogin() {
     services.login({
       username: '123',
       password: 'xxx'

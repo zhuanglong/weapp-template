@@ -1,6 +1,8 @@
 <text>
-  This is a plugin page!
+  {{ message }}
 </text>
-<text>
+<text wx:if="{{ cityInfo }}">
   {{ cityInfo }}
 </text>
+<van-button custom-style="margin-top: 50rpx" type="info" bind:click="onLogin">Fake Login</van-button>
+<van-notify id="van-notify" />
