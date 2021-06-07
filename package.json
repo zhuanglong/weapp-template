@@ -1,0 +1,15 @@
+{
+  "name": "weapp-plugin",
+  "version": "1.0.0",
+  "description": "微信小程序插件模板",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuanglong/weapp-template/tree/weapp-plugin"
+  },
+  "author": "",
+  "license": "ISC"
+}
