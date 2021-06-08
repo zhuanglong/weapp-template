@@ -20,10 +20,17 @@ Page({
     services.login({
       username: '123',
       password: 'xxx'
+    }, (task) => {
+      this.requestTask = task;
     }).then((res) => {
       this.setData({
         cityInfo: res.substring(res.indexOf('{'), res.indexOf('}') + 1)
       });
     });
+
+    // 取消请求
+    // setTimeout(() => {
+    //   this.requestTask && this.requestTask.abort();
+    // }, 300);
   }
 });

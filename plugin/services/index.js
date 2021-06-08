@@ -18,7 +18,7 @@ const requestWithToken = async (params) => {
       ...params.header,
       Authorization: `Bearer ${token}`
     };
-  
+
     const res2 = await request(params);
     if (res2.status === 'relogin') {
       // token 失效重新获取
@@ -33,12 +33,12 @@ const requestWithToken = async (params) => {
 }
 
 // 登录
-export function login(data) {
+export function login(data, cancelToken) {
   return request({
     url: 'https://pv.sohu.com/cityjson',
     method: 'POST',
     data
-  });
+  }, cancelToken);
 }
 
 // 登出
