@@ -4,4 +4,5 @@
 <text wx:if="{{ cityInfo }}">
   {{ cityInfo }}
 </text>
-<button style="margin-top: 50rpx" type="default" bind:tap="onLogin">Fake Login</button>
+<van-button custom-style="margin-top: 50rpx" type="info" bind:click="onLogin">Fake Login</van-button>
+<van-notify id="van-notify" />

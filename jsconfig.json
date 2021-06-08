@@ -2,7 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "/*": ["./*"]
+      "/*": ["./*"],
+      "@vant/weapp/*": ["./node_modules/@vant/weapp/dist/*"]
     }
   },
   "exclude": ["node_modules"]

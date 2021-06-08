@@ -1,4 +1,5 @@
 import { toBase64, fromBase64 } from 'js-base64';
+import Notify from '@vant/weapp/notify/notify';
 
 import * as services from '../../services/index';
 
@@ -9,6 +10,7 @@ Page({
   },
 
   onLoad() {
+    Notify({ type: 'success', message: this.data.message });
     const encoded = toBase64(this.data.message);
     console.log(encoded);
     console.log(fromBase64(encoded));

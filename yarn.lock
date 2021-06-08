@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@vant/weapp@^1.6.9":
+  version "1.6.9"
+  resolved "https://registry.nlark.com/@vant/weapp/download/@vant/weapp-1.6.9.tgz?cache=0&sync_timestamp=1622981988108&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vant%2Fweapp%2Fdownload%2F%40vant%2Fweapp-1.6.9.tgz#f4840a6207dfc51cd4534db9626f6989c7c355f4"
+  integrity sha1-9IQKYgffxRzUU025Ym9picfDVfQ=
+
 js-base64@^3.6.1:
   version "3.6.1"
   resolved "https://registry.nlark.com/js-base64/download/js-base64-3.6.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fjs-base64%2Fdownload%2Fjs-base64-3.6.1.tgz#555aae398b74694b4037af1f8a5a6209d170efbe"
