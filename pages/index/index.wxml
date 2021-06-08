@@ -18,6 +18,6 @@
     </block>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    <navigator class="user-motto" url="/pages/hello/hello">{{motto}}</navigator>
   </view>
 </view>

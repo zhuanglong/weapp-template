@@ -1,0 +1,7 @@
+<text>
+  {{ message }}
+</text>
+<text wx:if="{{ cityInfo }}">
+  {{ cityInfo }}
+</text>
+<button style="margin-top: 50rpx" type="default" bind:tap="onLogin">Fake Login</button>
