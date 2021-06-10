@@ -1,5 +1,5 @@
 import { showLoading, hideLoading, matchHttpStatusCode } from './statusHandle';
-import { baseURL } from '../config';
+import appConfig from '../appConfig';
 
 const timeout = 5000;
 
@@ -10,7 +10,7 @@ function request(opts = {}, cancelToken) {
     showLoading({ noLoading });
 
     const options = {
-      url: url.startsWith('http') ? url : baseURL + url, // 加上基础 URL
+      url: url.startsWith('http') ? url : appConfig.baseURL + url, // 加上基础 URL
       data,
       method,
       timeout,
